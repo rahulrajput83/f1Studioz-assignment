@@ -15,8 +15,12 @@ function Data(props) {
               return (
                 <div key={`cartdata-${i}`} className='shadow-sm d-flex flex-column gap-2 px-3 py-2  bg-white rounded'>
                   <div className='d-flex flex-row align-items-center justify-content-between'>
-                    <span className='d-flex flex-row sizeSmall gap-2'>Group Name <span className='weight'>#{e.name}</span></span>
-                    {e.id ? <span className='d-flex flex-row sizeSmall gap-2'>Cart <span className='weight'>#{e.id}</span></span> : null}
+                    <span className='d-flex flex-row sizeSmall gap-1'>
+                      <span className='d-none d-md-block'>Group Name</span>
+                      <span className='weight'>#{e.name}</span></span>
+                    {e.id ? <span className='d-flex flex-row sizeSmall gap-1'>
+                      <span className='d-block d-md-none'>Cart</span>
+                      <span className='weight'>#{e.id}</span></span> : null}
                   </div>
                   <span className='text-gray weight'>{e.info}</span>
                   <div className='d-flex gap-2 flex-row align-items-center justify-content-between'>
