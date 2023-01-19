@@ -19,14 +19,17 @@ function Form2() {
                     <Link to='/form1' className='text-decoration-none'>
                         <FaArrowLeft className='fs-5 text-white m-0 text-decoration-none p-0' />
                     </Link>
+                    <div className='d-flex size flex-column gap-1 flex-lg-row'>
                     <span className=''>Configure a new door</span>
+                    <span className='ms-lg-4'>1 of 3</span>
+                    </div>
                 </div>
                 <FaEllipsisV className='fs-5' />
             </div>
             <div className='d-flex flex-column p-3 gap-3 justify-content-center mt-0'>
-                <div className='d-flex flex-column gap-3 p-3 shadow rounded-1 bg-white col mx-lg-auto col-lg-6'>
+                <div className='d-flex flex-column gap-3 p-3 respCardHeight shadow rounded-1 bg-white col mx-lg-auto px-lg-5 col-lg-8'>
                     {/* Category */}
-                    <div className='d-flex flex-column flex-md-row gap-1'>
+                    <div className='d-flex flex-column flex-md-row gap-1 position-relative'>
                         <span className='size weight text-gray col col-md-5 d-block d-md-none'>Category</span>
                         <span className='size weight text-gray col col-md-5 d-none my-auto d-md-block'>Select Category</span>
                         <div className='d-flex flex-row col col-md-7 Cursor rounded-1 p-2 border align-items-center justify-content-between'>
@@ -70,6 +73,9 @@ function Form2() {
                             <span className='size'>Residential Door</span>
                             <FaAngleDown className='text-brown' />
                         </div>
+                    </div>
+                    <div className='position-absolute border bottom-0 p-2 d-flex justify-content-center justify-content-md-end align-items-center w-100 start-0 bg-white'>
+                        <button className='text-uppercase bg-brown border-0 col-11 col-md-2 size weight Cursor rounded text-white p-2'>Configure</button>
                     </div>
                 </div>
             </div>
