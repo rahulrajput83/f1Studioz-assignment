@@ -37,7 +37,7 @@ function Home() {
   }, [filter, cartData])
 
   return (
-    <div className='bg-light min-vh-100 d-flex flex-column'>
+    <div className='bg-bG min-vh-100 d-flex flex-column'>
       <Navbar />
       <Tab setClicked={setClicked} clicked={clicked} data={data} />
       <div className='d-flex flex-column gap-2 p-2'>

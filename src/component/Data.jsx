@@ -1,6 +1,6 @@
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
-import { FaUsers } from 'react-icons/fa'
+import { FaArrowDown, FaUsers } from 'react-icons/fa'
 import Add from './Add'
 import { dateDiff } from './Date'
 
@@ -43,19 +43,34 @@ function Data(props) {
           <div className='d-none d-lg-flex py-2 gap-0 px-3 flex-column'>
             <Row className='bg-white gap-0 rounded-top p-2'>
               <Col lg={4}>
-                <span className='text-uppercase text-headCol weight w-100 size'>Product information</span>
+                <span className='text-uppercase d-flex flex-row align-items-center gap-2 text-headCol weight w-100 size'>
+                  <span>Product information</span>
+                <FaArrowDown />
+                </span>
               </Col>
               <Col lg={2}>
-                <span className='text-uppercase text-headCol weight w-100 size'>Cart Name</span>
+                <span className='text-uppercase d-flex flex-row align-items-center gap-2 text-headCol weight w-100 size'>
+                  <span>Cart Name</span>
+                  <FaArrowDown />
+                  </span>
               </Col>
               <Col lg={2}>
-                <span className='text-uppercase text-headCol weight w-100 size'>Shipping point</span>
+                <span className='text-uppercase d-flex flex-row align-items-center gap-2 text-headCol weight w-100 size'>
+                  Shipping point
+                  <FaArrowDown />
+                  </span>
               </Col>
               <Col lg={2}>
-                <span className='text-uppercase text-headCol weight size w-100'>Created By</span>
+                <span className='text-uppercase d-flex flex-row align-items-center gap-2 text-headCol weight w-100 size'>
+                  Created By
+                  <FaArrowDown />
+                  </span>
               </Col>
               <Col lg={2}>
-                <span className='text-uppercase text-headCol weight size w-100'>Expiry</span>
+                <span className='text-uppercase d-flex flex-row align-items-center gap-2 text-headCol weight w-100 size'>
+                  Expiry
+                  <FaArrowDown />
+                  </span>
               </Col>
             </Row>
             {props.filterData.map((e, i) => {
