@@ -94,19 +94,33 @@ export default function reducer(state = {
             share: true,
             id: 70452444
         }
-    ]
+    ],
+    Category: '',
+    DoorStyle: '',
+    DoorType: '',
+    ShippingPoint: ''
 }, action) {
     switch (action.type) {
-        case "ADD_Cart":
+        case "Add_Category":
             return {
                 ...state,
-                Cart: action.payload
+                Category: action.payload
             };
-        case "Delete_Cart":
+        case "Add_DoorStyle":
             return {
                 ...state,
-                Cart: action.payload
+                DoorStyle: action.payload
             };
+        case "Add_DoorType":
+                return {
+                    ...state,
+                    DoorType: action.payload
+                };
+        case "Add_ShippingPoint":
+                return {
+                    ...state,
+                    ShippingPoint: action.payload
+                };
         default:
             return state;
     }
