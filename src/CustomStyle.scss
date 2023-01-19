@@ -1,0 +1,89 @@
+$theme-colors: (
+    "pink": #ED357E,
+    "dark": #000,
+    "icon": #808080,
+    "red": red,
+    "gray": #34495E,
+    "yellow": #FACA30,
+    "light": #E5E5E5,
+    "orange": #E67E22,
+    'darkGray': #8894A0,
+    "lightGreen": rgba(212, 243, 228, 0.1),
+    "green": #17A85F,
+    "brown": #66332B,
+    "borderColor": rgb(199, 196, 196),
+    "activeBg": rgba(221, 237, 253, 1),
+    'headCol': rgba(136, 148, 160, 1),
+    "headBg": rgb(241, 242, 243)
+);
+.Item {
+    cursor: pointer;
+    width: 100%;
+    @media (min-width: 768px) {
+        width: 10%;
+    }
+}
+
+.Cursor {
+    cursor: pointer;
+}
+
+.Tab {
+    height: 0.3rem;
+    width: 50%;
+    @media (min-width: 768px) {
+        width: 10%;
+    }
+}
+
+.CartPosition {
+    left: 0;
+    @media (min-width: 768px) {
+        left: 38%;
+    }
+    
+}
+
+.FavPosition {
+    right: 0;
+    @media (min-width: 768px) {
+        right: 39%;
+    }
+}
+
+.sizeSmall {
+    font-size: 0.7rem;
+}
+
+.size{
+    font-size: 0.9rem
+}
+.weight {
+    font-weight: 500
+}
+
+.h-1 {
+    height: 0.12rem
+}
+.w-1 {
+    width: 1.5rem
+}
+
+.w-2 {
+    width: 1.2rem
+}
+.w-3 {
+    width: 0.9rem
+}
+
+.Add {
+    bottom: 5%;
+    right: 4%;
+    border-radius: 100%;
+    width: 3rem;
+    height: 3rem
+}
+
+
+/* import bootstrap to set changes */
+@import "~bootstrap/scss/bootstrap";
