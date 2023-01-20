@@ -1,9 +1,8 @@
 import React, { useState } from 'react'
-import { FaAngleDown, FaArrowLeft, FaEllipsisV, FaQuestionCircle } from 'react-icons/fa';
+import { FaAngleDown, FaQuestionCircle } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import FormSubNav from '../component/FormSubNav';
 import LinkRed from '../component/LinkRed';
-import Navbar from '../component/Navbar';
 
 const Category = ["Residential Door", "Not Available", "Other"];
 const Style = ["Canyon Ridge® Collection", "Not Available", "Other"];
@@ -35,21 +34,7 @@ function Form2() {
 
     return (
         <div className='d-flex flex-column bg-bG min-vh-100 position-relative'>
-            <div className='d-none d-lg-block'>
-                <Navbar />
-            </div>
-            <div className='d-flex text-white p-3 bg-gray flex-row align-items-center justify-content-between gap-2'>
-                <div className='d-flex gap-3 justify-content-center align-items-center flex-row'>
-                    <Link to='/form1' className='text-decoration-none'>
-                        <FaArrowLeft className='fs-5 text-white m-0 text-decoration-none p-0' />
-                    </Link>
-                    <div className='d-flex size flex-column gap-1 flex-lg-row'>
-                        <span className=''>Configure a new door</span>
-                        <span className='ms-lg-4'>1 of 3</span>
-                    </div>
-                </div>
-                <FaEllipsisV className='fs-5' />
-            </div>
+            <FormSubNav backlink='/form1' title='Configure a new door' sub='1 of 3' />
             <div className='d-flex flex-column p-3 gap-3 justify-content-center mt-0'>
                 <div className='d-flex flex-column gap-3 p-3 respCardHeight shadow rounded-1 bg-white col mx-lg-auto px-lg-5 col-lg-8'>
                     {/* Category */}
