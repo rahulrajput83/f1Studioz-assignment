@@ -24,7 +24,7 @@ function Form3() {
       <div className='d-flex flex-column px-3 py-2 justify-content-center '>
 
         {/* Layout Options Card */}
-        <div className='d-flex shadow Rounded flex-column'>
+        <div className='d-flex shadow bg-white Rounded flex-column'>
           <span className='px-3 bg-CardBg py-2 Rounded fw-bold text-gray'>Layout Options</span>
           <div className='d-flex gap-3 flex-column px-3 py-4'>
             <Drop title='Assembly Type' icon={false} />
