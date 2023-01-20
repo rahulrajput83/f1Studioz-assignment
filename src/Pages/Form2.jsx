@@ -134,10 +134,16 @@ function Form2() {
                             </div> : null
                         }
                     </div>
-                    
+
+                    <div className='d-none d-lg-block'>
+                        <LinkRed />
+                    </div>
                 </div>
+
             </div>
-            <LinkRed />
+            <div className='d-block d-lg-none'>
+                <LinkRed />
+            </div>
         </div>
 
     )
