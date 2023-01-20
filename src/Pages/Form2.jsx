@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FaAngleDown, FaArrowLeft, FaEllipsisV, FaQuestionCircle } from 'react-icons/fa';
 import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
+import LinkRed from '../component/LinkRed';
 import Navbar from '../component/Navbar';
 
 const Category = ["Residential Door", "Not Available", "Other"];
@@ -33,7 +34,7 @@ function Form2() {
     }
 
     return (
-        <div className='d-flex flex-column bg-bG min-vh-100'>
+        <div className='d-flex flex-column bg-bG min-vh-100 position-relative'>
             <div className='d-none d-lg-block'>
                 <Navbar />
             </div>
@@ -133,12 +134,12 @@ function Form2() {
                             </div> : null
                         }
                     </div>
-                    <Link to='/form3' className='position-absolute border bottom-0 p-2 d-flex justify-content-center justify-content-md-end align-items-center w-100 start-0 bg-white'>
-                        <button className='text-uppercase bg-brown border-0 col-11 col-md-2 size weight Cursor rounded text-white p-2'>Configure</button>
-                    </Link>
+                    
                 </div>
             </div>
+            <LinkRed />
         </div>
+
     )
 }
 
