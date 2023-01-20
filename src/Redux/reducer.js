@@ -98,9 +98,112 @@ export default function reducer(state = {
     Category: '',
     DoorStyle: '',
     DoorType: '',
-    ShippingPoint: ''
+    ShippingPoint: '',
+    Assembly: '',
+    WidthOne: '',
+    WidthTwo: '',
+    HeightOne: '',
+    HeightTwo: '',
+    Windcode: '',
+    Design: '',
+    Color: '',
+    GlassType: '',
+    Section: '',
+    Framing: '',
+    Spring: '',
+    TrackSize: '',
+    TrackMount: '',
+    TrackLift: '',
+    TrackRadius: '',
+    Lock: '',
+    Packaging: ''
 }, action) {
     switch (action.type) {
+        case "Add_Packaging":
+            return {
+                ...state,
+                Packaging: action.payload
+            };
+        case "Add_Lock":
+            return {
+                ...state,
+                Lock: action.payload
+            };
+        case "Add_TrackRadius":
+            return {
+                ...state,
+                TrackRadius: action.payload
+            };
+        case "Add_TrackLift":
+            return {
+                ...state,
+                TrackLift: action.payload
+            };
+        case "Add_TrackMount":
+            return {
+                ...state,
+                TrackMount: action.payload
+            };
+        case "Add_TrackSize":
+            return {
+                ...state,
+                TrackSize: action.payload
+            };
+        case "Add_Spring":
+            return {
+                ...state,
+                Spring: action.payload
+            };
+        case "Add_Framing":
+            return {
+                ...state,
+                Framing: action.payload
+            };
+        case "Add_Section":
+            return {
+                ...state,
+                Section: action.payload
+            };
+        case "Add_GlassType":
+            return {
+                ...state,
+                GlassType: action.payload
+            };
+        case "Add_Color":
+            return {
+                ...state,
+                Color: action.payload
+            };
+        case "Add_Design":
+            return {
+                ...state,
+                Design: action.payload
+            };
+        case "Add_Windcode":
+            return {
+                ...state,
+                Windcode: action.payload
+            };
+        case "Add_HeightTwo":
+            return {
+                ...state,
+                HeightTwo: action.payload
+            };
+        case "Add_HeightOne":
+            return {
+                ...state,
+                HeightOne: action.payload
+            };
+        case "Add_WidthTwo":
+            return {
+                ...state,
+                WidthTwo: action.payload
+            };
+        case "Add_WidthOne":
+            return {
+                ...state,
+                WidthOne: action.payload
+            };
         case "Add_Category":
             return {
                 ...state,
@@ -121,6 +224,11 @@ export default function reducer(state = {
                     ...state,
                     ShippingPoint: action.payload
                 };
+        case "Add_Assembly":
+                    return {
+                        ...state,
+                        Assembly: action.payload
+                    };
         default:
             return state;
     }
