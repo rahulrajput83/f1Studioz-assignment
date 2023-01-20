@@ -16,7 +16,7 @@ function FormSubNav(props) {
           </Link>
           <div className='d-flex size flex-column flex-md-row'>
             <span className=''>{props.title}</span>
-            {props.sub ? <span className='ms-lg-4 text-headCol'>{props.sub}</span> : null}
+            {props.sub ? <span className='ms-md-4 text-headCol'>{props.sub}</span> : null}
           </div>
         </div>
         <FaEllipsisV className='fs-5' />

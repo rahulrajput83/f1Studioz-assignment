@@ -12,11 +12,13 @@ $theme-colors: (
     "green": #17A85F,
     "brown": #66332B,
     "borderColor": #c7c4c4,
-    "activeBg": rgba(221, 237, 253, 1),
-    'headCol': rgba(136, 148, 160, 1),
-    "headBg": rgb(241, 242, 243),
+    "activeBg": #ddedfd,
+    'headCol': #8894a0,
+    "headBg": #f1f2f3,
     "bG": #F6F8FA,
-    "textDarkGray": rgba(42, 41, 42, 1)
+    "textDarkGray": #2a292a,
+    "CardBg": #E4E4E4
+
 );
 .Item {
     cursor: pointer;
@@ -99,6 +101,10 @@ $theme-colors: (
     height: 3rem
 }
 
+.Progress {
+    height:  0.25rem;
+}
+
 .respCardHeight {
     @media (min-width: 992px) {
         position: absolute;
@@ -108,6 +114,11 @@ $theme-colors: (
         bottom: auto;
         transform: translateX(-50%);
     }
+}
+
+.Rounded {
+    border-top-left-radius: 0.5rem;
+    border-top-right-radius: 0.5rem; 
 }
 
 

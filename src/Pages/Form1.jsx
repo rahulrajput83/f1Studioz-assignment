@@ -1,6 +1,5 @@
 import React from 'react'
-import Navbar from '../component/Navbar'
-import { FaAngleRight, FaArrowLeft, FaEllipsisV } from 'react-icons/fa'
+import { FaAngleRight } from 'react-icons/fa'
 import { Link } from 'react-router-dom'
 import FormSubNav from '../component/FormSubNav'
 
