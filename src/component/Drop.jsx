@@ -30,7 +30,7 @@ function Drop(props) {
                 {props.state === 'Packaging' ?
                     <span className='d-flex p-1 size text-warning flex-row gap-2 weight align-items-start'>
                         <MdOutlineInfo className='fs-5' />
-                        <span className=''>Clopay CWD Model Excludes Packaging Options</span>
+                        <span className=''>Clopay CWD Models Excludes Packaging Options</span>
                     </span> : null}
             </div>
             {show ?
