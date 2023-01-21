@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react'
+import { FaAngleRight } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
+import CheckBox from '../component/CheckBox';
 import Checked from '../component/Checked';
 import Drop from '../component/Drop';
 import DropSize from '../component/DropSize';
@@ -46,7 +48,7 @@ function Form3() {
     console.log(trackOptions)
   }, [layoutOptions, windowOptions, trackOptions])
   return (
-    <div className='d-flex flex-column bg-bG min-vh-100 position-relative pb-5'>
+    <div className='d-flex flex-column bg-bG min-vh-100 position-relative'>
       <FormSubNav backlink='/form2' title='Configure a new door' sub='2 of 3' />
 
       {/* Progress Bar */}
@@ -115,8 +117,28 @@ function Form3() {
             <Checked icon={true} title='Select Additional Options' />
           </div>
         </div>
+
+        <div className='d-flex p-3 shadow d-lg-none rounded bg-white Rounded'>
+        <CheckBox state='Configuration' dispatch='Add_Configuration' text='Special Configuration Request' />
+        </div>
+        <div className='d-flex p-3 flex-row size shadow d-lg-none text-brown align-items-center justify-content-between rounded bg-white Rounded'>
+          <span className='weight'>Torsion Spring Inquiry</span>
+          <FaAngleRight />
+        </div>
+        <div className='d-flex p-3 flex-row shadow text-brown size d-lg-none align-items-center justify-content-between rounded bg-white Rounded'>
+          <span className='weight'>Additional Information</span>
+          <FaAngleRight />
+        </div>
       </div>
 
+      <div className='p-3 w-100 mt-5 d-flex flex-row justify-content-center justify-content-md-end align-items-center gap-4 border-bottom-0 border-left-0 border-right-0 bg-white border'>
+        <button aria-disabled="true" className='col-5 col-md-3 col-lg-2 Cursor p-2 btn rounded bg-white fw-bold border border-2 border-brown text-brown'>
+          PREVIEW
+        </button>
+        <button disabled aria-disabled="true" className='col-5 col-md-3 col-lg-2 Cursor btn p-2 fw-bold disabled rounded bg-brown weight border border-2 border-brown text-white'>
+          ADD TO CART
+        </button>
+      </div>
 
 
     </div>

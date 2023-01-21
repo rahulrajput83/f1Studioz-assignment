@@ -117,9 +117,69 @@ export default function reducer(state = {
     TrackRadius: '',
     Lock: '',
     Packaging: '',
-    MICS: false
+    MICS: false,
+    Extra: false,
+    Spade: false,
+    Quiet: false,
+    astragal: false,
+    guarantee: false,
+    medallion: false,
+    seal: false,
+    mounted: false,
+    spear: false,
+    Configuration: false
 }, action) {
     switch (action.type) {
+        case "Add_Configuration":
+            return {
+                ...state,
+                Configuration: action.payload
+            };
+        case "Add_spear":
+            return {
+                ...state,
+                spear: action.payload
+            };
+        case "Add_mounted":
+            return {
+                ...state,
+                mounted: action.payload
+            };
+        case "Add_seal":
+            return {
+                ...state,
+                seal: action.payload
+            };
+        case "Add_medallion":
+            return {
+                ...state,
+                medallion: action.payload
+            };
+        case "Add_guarantee":
+            return {
+                ...state,
+                guarantee: action.payload
+            };
+        case "Add_astragal":
+            return {
+                ...state,
+                astragal: action.payload
+            };
+        case "Add_Quiet":
+            return {
+                ...state,
+                Quiet: action.payload
+            };
+        case "Add_Spade":
+            return {
+                ...state,
+                Spade: action.payload
+            };
+        case "Add_Extra":
+            return {
+                ...state,
+                Extra: action.payload
+            };
         case "Add_MICS":
             return {
                 ...state,

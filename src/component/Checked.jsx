@@ -1,38 +1,25 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { FaQuestionCircle } from 'react-icons/fa';
-import { useDispatch, useSelector } from 'react-redux';
 import CheckBox from './CheckBox';
 
 function Checked(props) {
-    const dispatch = useDispatch();
-    const checked = useSelector((state) => state[props.state])
-    const [change, setChange] = useState(checked);
-
-    const handleSubmit = () => {
-        setChange(true);
-        let action = {
-            type: props.dispatch,
-            payload: change
-        };
-        dispatch(action);
-    }
 
     return (
-        <div className='d-flex flex-column gap-1 flex-md-row position-relative'>
+        <div className='d-flex flex-column gap-1 flex-md-row position-relative align-items-md-start'>
             <span className='size weight gap-3 col col-md-5 justify-content-md-start d-flex flex-row align-items-center justify-content-between text-gray'>
                 <span>{props.title}</span>
                 {props.icon ? <FaQuestionCircle className='me-2 text-darkGray' /> : null}
             </span>
-            <div className='d-flex flex-column col col-md-7'>
-            <CheckBox text='Extra Strut(S)' />
-                <CheckBox text='Spade strap hinge(s)' />
-                <CheckBox text='14 GA Quiet hinge' />
-                <CheckBox text='less bottom astragal' />
-                <CheckBox text='gold bar guarantee (select dealers)' />
-                <CheckBox text='medallion hardware upgrade' />
-                <CheckBox text='light seal kit' />
-                <CheckBox text='Slide lock mounted at 54"' />
-                <CheckBox text='2 spear lift handles' />
+            <div className='d-flex mt-2 mt-md-0 flex-column gap-3 col col-md-7'>
+                <CheckBox state='Extra' dispatch='Add_Extra' text='Extra Strut(s)' />
+                <CheckBox state='Spade' dispatch='Add_Spade' text='Spade Strap Hinge(s)' />
+                <CheckBox state='Quiet' dispatch='Add_Quiet' text='14 GA Quiet Hinge' />
+                <CheckBox state='astragal' dispatch='Add_astragal' text='Less Bottom Astragal' />
+                <CheckBox state='guarantee' dispatch='Add_guarantee' text='Gold Bar Guarantee ( Select Dealers )' />
+                <CheckBox state='medallion' dispatch='Add_medallion' text='Medallion Hardware Upgrade' />
+                <CheckBox state='seal' dispatch='Add_spear' text='Light Seal Kit' />
+                <CheckBox state='mounted' dispatch='Add_mounted' text='Slide Lock Mounted at 54"' />
+                <CheckBox state='spear' dispatch='' text='2 Spear Lift Handles' />
             </div>
         </div>
     )

@@ -19,11 +19,12 @@ $theme-colors: (
     "textDarkGray": #2a292a,
     "CardBg": #E4E4E4,
     "warning": #D50000
-
 );
+
 .Item {
     cursor: pointer;
     width: 100%;
+
     @media (min-width: 768px) {
         width: 10%;
     }
@@ -36,9 +37,11 @@ $theme-colors: (
 .Tab {
     height: 0.3rem;
     width: 50%;
+
     @media (min-width: 768px) {
         width: 15%;
     }
+
     @media (min-width: 992px) {
         width: 10%;
     }
@@ -46,26 +49,30 @@ $theme-colors: (
 
 .CartPosition {
     left: 0;
+
     @media (min-width: 768px) {
         left: 34%;
     }
+
     @media (min-width: 992px) {
         left: 38%;
     }
-    
+
 }
 
 .FavPosition {
     right: 0;
+
     @media (min-width: 768px) {
         right: 35%;
     }
+
     @media (min-width: 992px) {
         right: 38.5%;
     }
 }
 
-.z-index{
+.z-index {
     z-index: 2;
 }
 
@@ -73,9 +80,10 @@ $theme-colors: (
     font-size: 0.7rem;
 }
 
-.size{
+.size {
     font-size: 0.9rem
 }
+
 .weight {
     font-weight: 500
 }
@@ -83,6 +91,7 @@ $theme-colors: (
 .h-1 {
     height: 0.12rem
 }
+
 .w-1 {
     width: 1.5rem
 }
@@ -90,6 +99,7 @@ $theme-colors: (
 .w-2 {
     width: 1.2rem
 }
+
 .w-3 {
     width: 0.9rem
 }
@@ -103,7 +113,7 @@ $theme-colors: (
 }
 
 .Progress {
-    height:  0.25rem;
+    height: 0.25rem;
 }
 
 .respCardHeight {
@@ -119,10 +129,11 @@ $theme-colors: (
 
 .Rounded {
     border-top-left-radius: 0.5rem;
-    border-top-right-radius: 0.5rem; 
+    border-top-right-radius: 0.5rem;
 }
 
-input[type=radio], input[type=checkbox] {
+input[type=radio],
+input[type=checkbox] {
     accent-color: #66332B;
 }
 
