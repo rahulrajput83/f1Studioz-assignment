@@ -17,9 +17,9 @@ function Checked(props) {
                 <CheckBox state='astragal' dispatch='Add_astragal' text='Less Bottom Astragal' />
                 <CheckBox state='guarantee' dispatch='Add_guarantee' text='Gold Bar Guarantee ( Select Dealers )' />
                 <CheckBox state='medallion' dispatch='Add_medallion' text='Medallion Hardware Upgrade' />
-                <CheckBox state='seal' dispatch='Add_spear' text='Light Seal Kit' />
+                <CheckBox state='seal' dispatch='Add_seal' text='Light Seal Kit' />
                 <CheckBox state='mounted' dispatch='Add_mounted' text='Slide Lock Mounted at 54"' />
-                <CheckBox state='spear' dispatch='' text='2 Spear Lift Handles' />
+                <CheckBox state='spear' dispatch='Add_spear' text='2 Spear Lift Handles' />
             </div>
         </div>
     )

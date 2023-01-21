@@ -15,10 +15,6 @@ function Radio(props) {
         dispatch(action);
     }
 
-    useEffect(() => {
-        console.log(checked)
-    }, [checked])
-
     return (
         <div className='d-flex flex-column gap-1 flex-md-row position-relative'>
             <span className='size weight gap-3 col col-md-5 justify-content-md-start d-flex flex-row align-items-center justify-content-between text-gray'>
