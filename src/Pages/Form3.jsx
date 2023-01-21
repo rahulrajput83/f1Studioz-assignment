@@ -1,8 +1,11 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
+import { useSelector } from 'react-redux';
 import Drop from '../component/Drop';
 import DropSize from '../component/DropSize';
 import FormSubNav from '../component/FormSubNav';
 
+
+/* Dummy Data */
 const Assembly = ["Complete Door", "Partial Door", "Other"];
 const widthOne = ['7 ft.', '8 ft.', '9 ft.'];
 const widthTwo = ['7 in', '8 in.', '9 in'];
@@ -22,8 +25,24 @@ const TrackRadius = ['12" Radius', '11" Radius', '13" Radius'];
 const Lock = ['Inside Slide Lock (#2)', 'Inside Slide Lock (#3)'];
 const Packaging = ['[x] Distributor', '[y] Distributor']
 
-
 function Form3() {
+  const state = useSelector((state) => state)
+  const [layoutOptions, setLayoutOptions] = useState([]);
+  const [windowOptions, setWindowOptions] = useState([]);
+  const [trackOptions, setTrackOptions] = useState([])
+
+
+  useEffect(() => {
+    setLayoutOptions([[state.Assembly, state.WidthOne, state.WidthTwo, state.HeightOne, state.HeightTwo, state.Windcode, state.Design, state.Color]])
+    setWindowOptions([state.GlassType, state.Section, state.Framing]);
+    setTrackOptions([state.Spring, state.TrackSize, state.TrackMount, state.TrackLift, state.TrackRadius])
+  }, [state])
+
+  useEffect(() => {
+    console.log(layoutOptions)
+    console.log(windowOptions)
+    console.log(trackOptions)
+  }, [layoutOptions, windowOptions, trackOptions])
   return (
     <div className='d-flex flex-column bg-bG min-vh-100 position-relative pb-5'>
       <FormSubNav backlink='/form2' title='Configure a new door' sub='2 of 3' />
