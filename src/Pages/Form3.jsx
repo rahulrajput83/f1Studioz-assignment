@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { FaAngleRight } from 'react-icons/fa';
 import { useSelector } from 'react-redux';
+import { Link } from 'react-router-dom';
 import CheckBox from '../component/CheckBox';
 import Checked from '../component/Checked';
 import Drop from '../component/Drop';
@@ -164,9 +165,9 @@ function Form3() {
       </div>
 
       <div className='p-3 w-100 mt-5 d-flex flex-row justify-content-center justify-content-md-end align-items-center gap-4 border-bottom-0 border-left-0 border-right-0 bg-white border'>
-        <button aria-disabled="true" className='col-5 col-md-3 col-lg-2 Cursor p-2 btn rounded bg-white fw-bold border border-2 border-brown text-brown'>
+        <Link to='/preview' aria-disabled="true" className='col-5 col-md-3 col-lg-2 Cursor p-2 btn rounded bg-white fw-bold border border-2 border-brown text-brown'>
           PREVIEW
-        </button>
+        </Link>
         <button disabled aria-disabled="true" className='col-5 col-md-3 col-lg-2 Cursor btn p-2 fw-bold disabled rounded bg-brown weight border border-2 border-brown text-white'>
           ADD TO CART
         </button>
