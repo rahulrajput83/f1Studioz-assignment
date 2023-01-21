@@ -46,19 +46,19 @@ function Form3() {
         <div className='d-flex shadow rounded bg-white Rounded flex-column'>
           <span className='px-3 bg-CardBg py-2 Rounded weight text-gray'>Layout Options</span>
           <div className='d-flex gap-3 flex-column px-3 py-4'>
-            <Drop data={Assembly} title='Assembly Type' icon={false} />
+            <Drop state='Assembly' dispatch={'Add_Assembly'} data={Assembly} title='Assembly Type' icon={false} />
             <div className='d-flex flex-column gap-1 flex-md-row position-relative'>
               <span className='size weight gap-3 col col-md-5 justify-content-md-start d-flex flex-row align-items-center justify-content-between text-gray'>
                 <span>Measure Size</span>
               </span>
-              <div className='d-flex flex-column gap-4'>
-                <DropSize one={widthOne} two={widthTwo} title='Width' />
-                <DropSize one={heightOne} two={heightTwo} title='Height' />
+              <div className='d-flex flex-column gap-4 w-100'>
+                <DropSize state='WidthOne' stateTwo='WidthTwo' dispatch={'Add_WidthOne'} dispatchTwo={'Add_WidthTwo'} one={widthOne} two={widthTwo} title='Width' />
+                <DropSize state='HeightOne' stateTwo='HeightTwo' dispatch={'Add_HeightOne'} dispatchTwo={'Add_HeightTwo'} one={heightOne} two={heightTwo} title='Height' />
               </div>
             </div>
-            <Drop data={Windcode} title='Windcode' icon={true} />
-            <Drop data={Design} title='Design' icon={true} />
-            <Drop data={Color} title='Color' icon={true} />
+            <Drop state='Windcode' dispatch={'Add_Windcode'} data={Windcode} title='Windcode' icon={true} />
+            <Drop state='Design' dispatch={'Add_Design'} data={Design} title='Design' icon={true} />
+            <Drop state='Color' dispatch={'Add_Color'} data={Color} title='Color' icon={true} />
           </div>
         </div>
 
@@ -66,9 +66,9 @@ function Form3() {
         <div className='d-flex shadow rounded bg-white Rounded flex-column'>
           <span className='px-3 bg-CardBg py-2 Rounded weight text-gray'>Window Options</span>
           <div className='d-flex flex-column px-3 py-4 gap-3'>
-            <Drop data={GlassType} title='Glass Type' icon={true} />
-            <Drop data={SectionGlazed} title='Section(S) Glazed' icon={true} />
-            <Drop data={Framing} title='Framing' icon={true} />
+            <Drop state='GlassType' dispatch={'Add_GlassType'} data={GlassType} title='Glass Type' icon={true} />
+            <Drop state='Section' dispatch={'Add_Section'} data={SectionGlazed} title='Section(S) Glazed' icon={true} />
+            <Drop state='Framing' dispatch={'Add_Framing'} data={Framing} title='Framing' icon={true} />
           </div>
         </div>
 
@@ -76,11 +76,11 @@ function Form3() {
         <div className='d-flex shadow rounded bg-white Rounded flex-column'>
           <span className='px-3 bg-CardBg py-2 Rounded weight text-gray'>Track Options</span>
           <div className='d-flex flex-column px-3 py-4 gap-3'>
-            <Drop data={Spring} title='Spring' icon={true} />
-            <Drop data={TrackSize} title='Track Size' icon={true} />
-            <Drop data={TrackMount} title='Track Mount' icon={true} />
-            <Drop data={TrackLift} title='Track Lift' icon={true} />
-            <Drop data={TrackRadius} title='Track Radius' icon={true} />
+            <Drop state='Spring' dispatch={'Add_Spring'} data={Spring} title='Spring' icon={true} />
+            <Drop state='TrackSize' dispatch={'Add_TrackSize'} data={TrackSize} title='Track Size' icon={true} />
+            <Drop state='TrackMount' dispatch={'Add_TrackMount'} data={TrackMount} title='Track Mount' icon={true} />
+            <Drop state='TrackLift' dispatch={'Add_TrackLift'} data={TrackLift} title='Track Lift' icon={true} />
+            <Drop state='TrackRadius' dispatch={'Add_TrackRadius'} data={TrackRadius} title='Track Radius' icon={true} />
           </div>
         </div>
 
@@ -88,8 +88,8 @@ function Form3() {
         <div className='d-flex shadow rounded bg-white Rounded flex-column'>
           <span className='px-3 bg-CardBg py-2 Rounded weight text-gray'>Other Options</span>
           <div className='d-flex flex-column px-3 py-4 gap-3'>
-            <Drop data={Lock} title='Lock' icon={true} />
-            <Drop data={Packaging} title='Packaging' icon={true} />
+            <Drop state='Lock' dispatch={'Add_Lock'} data={Lock} title='Lock' icon={true} />
+            <Drop state='Packaging' dispatch={'Add_Packaging'} data={Packaging} title='Packaging' icon={true} />
             
           </div>
         </div>
