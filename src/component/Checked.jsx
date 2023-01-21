@@ -18,13 +18,13 @@ function Checked(props) {
     }
 
     return (
-        <div className='d-flex flex-column w-100 align-items-start gap-1 flex-md-row position-relative'>
+        <div className='d-flex flex-column gap-1 flex-md-row position-relative'>
             <span className='size weight gap-3 col col-md-5 justify-content-md-start d-flex flex-row align-items-center justify-content-between text-gray'>
-                <span className='me-auto me-md-0'>{props.title}</span>
-                <FaQuestionCircle className='me-2 text-darkGray' />
+                <span>{props.title}</span>
+                {props.icon ? <FaQuestionCircle className='me-2 text-darkGray' /> : null}
             </span>
-            <div className='d-flex flex-column gap-2 col col-md-7'>
-                <CheckBox text='Extra Strut(S)' />
+            <div className='d-flex flex-column col col-md-7'>
+            <CheckBox text='Extra Strut(S)' />
                 <CheckBox text='Spade strap hinge(s)' />
                 <CheckBox text='14 GA Quiet hinge' />
                 <CheckBox text='less bottom astragal' />

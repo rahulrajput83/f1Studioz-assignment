@@ -112,7 +112,7 @@ function Form3() {
             <Drop state='Lock' dispatch={'Add_Lock'} data={Lock} title='Lock' icon={true} />
             <Radio title='MISC Lock Options' text='No Lock Hole' state='MICS' dispatch='Add_MICS' />
             <Drop state='Packaging' dispatch={'Add_Packaging'} data={Packaging} title='Packaging' icon={true} />
-            <Checked title='Select Additional Options' />
+            <Checked icon={true} title='Select Additional Options' />
           </div>
         </div>
       </div>
