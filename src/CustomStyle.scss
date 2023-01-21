@@ -122,6 +122,10 @@ $theme-colors: (
     border-top-right-radius: 0.5rem; 
 }
 
+input[type=radio], input[type=checkbox] {
+    accent-color: #66332B;
+}
+
 
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";

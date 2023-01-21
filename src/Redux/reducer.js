@@ -116,9 +116,15 @@ export default function reducer(state = {
     TrackLift: '',
     TrackRadius: '',
     Lock: '',
-    Packaging: ''
+    Packaging: '',
+    MICS: false
 }, action) {
     switch (action.type) {
+        case "Add_MICS":
+            return {
+                ...state,
+                MICS: action.payload
+            };
         case "Add_Packaging":
             return {
                 ...state,

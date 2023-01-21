@@ -1,8 +1,10 @@
 import React, { useEffect, useState } from 'react'
 import { useSelector } from 'react-redux';
+import Checked from '../component/Checked';
 import Drop from '../component/Drop';
 import DropSize from '../component/DropSize';
 import FormSubNav from '../component/FormSubNav';
+import Radio from '../component/Radio';
 
 
 /* Dummy Data */
@@ -108,8 +110,9 @@ function Form3() {
           <span className='px-3 bg-CardBg py-2 Rounded weight text-gray'>Other Options</span>
           <div className='d-flex flex-column px-3 py-4 gap-3'>
             <Drop state='Lock' dispatch={'Add_Lock'} data={Lock} title='Lock' icon={true} />
+            <Radio title='MISC Lock Options' text='No Lock Hole' state='MICS' dispatch='Add_MICS' />
             <Drop state='Packaging' dispatch={'Add_Packaging'} data={Packaging} title='Packaging' icon={true} />
-            
+            <Checked title='Select Additional Options' />
           </div>
         </div>
       </div>
