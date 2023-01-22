@@ -150,7 +150,7 @@ function Preview() {
                         <MdAddBox />
                         <span>ADD MORE</span>
                     </button>
-                    <Link to='/' aria-disabled="true" className='col-5 d-flex justify-content-center align-items-center gap-2 col-md-3 Cursor p-2 btn rounded bg-white fw-bold border border-2 border-brown text-brown'>
+                    <Link to='/' aria-disabled="true" className='col-5 d-flex bg-brown justify-content-center align-items-center gap-2 col-md-3 Cursor p-2 btn rounded fw-bold border border-2 border-brown text-white'>
                         <span>PLACE ORDER</span>
                     </Link>
                 </div>
