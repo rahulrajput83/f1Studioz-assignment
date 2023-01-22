@@ -101,7 +101,7 @@ function Form3() {
         {/* Layout Options Card */}
         <div className='d-flex shadow rounded bg-white Rounded flex-column'>
           <span className='px-3 bg-CardBg py-2 Rounded weight text-gray'>Layout Options</span>
-          <div className='d-flex gap-3 flex-column px-5 py-4'>
+          <div className='d-flex gap-3 flex-column px-3 px-lg-5 py-4'>
             <Drop state='Assembly' dispatch={'Add_Assembly'} data={Assembly} title='Assembly Type' icon={false} />
             <div className='d-flex flex-column gap-1 flex-md-row position-relative'>
               <span className='size weight gap-3 col col-md-5 justify-content-md-start d-flex flex-row align-items-center justify-content-between text-gray'>
@@ -121,7 +121,7 @@ function Form3() {
         {/* Window Options */}
         <div className='d-flex shadow rounded bg-white Rounded flex-column'>
           <span className='px-3 bg-CardBg py-2 Rounded weight text-gray'>Window Options</span>
-          <div className='d-flex flex-column px-5 py-4 gap-3'>
+          <div className='d-flex flex-column px-3 px-lg-5 py-4 gap-3'>
             <Drop state='GlassType' dispatch={'Add_GlassType'} data={GlassType} title='Glass Type' icon={true} />
             <Drop state='Section' dispatch={'Add_Section'} data={SectionGlazed} title='Section(S) Glazed' icon={true} />
             <Drop state='Framing' dispatch={'Add_Framing'} data={Framing} title='Framing' icon={true} />
@@ -131,7 +131,7 @@ function Form3() {
         {/* Track Options */}
         <div className='d-flex shadow rounded bg-white Rounded flex-column'>
           <span className='px-3 bg-CardBg py-2 Rounded weight text-gray'>Track Options</span>
-          <div className='d-flex flex-column px-5 py-4 gap-3'>
+          <div className='d-flex flex-column px-3 px-lg-5 py-4 gap-3'>
             <Drop state='Spring' dispatch={'Add_Spring'} data={Spring} title='Spring' icon={true} />
             <Drop state='TrackSize' dispatch={'Add_TrackSize'} data={TrackSize} title='Track Size' icon={true} />
             <Drop state='TrackMount' dispatch={'Add_TrackMount'} data={TrackMount} title='Track Mount' icon={true} />
@@ -143,7 +143,7 @@ function Form3() {
         {/* Other Options */}
         <div className='d-flex shadow rounded bg-white Rounded flex-column'>
           <span className='px-3 bg-CardBg py-2 Rounded weight text-gray'>Other Options</span>
-          <div className='d-flex flex-column px-5 py-4 gap-3'>
+          <div className='d-flex flex-column px-3 px-lg-5 py-4 gap-3'>
             <Drop state='Lock' dispatch={'Add_Lock'} data={Lock} title='Lock' icon={true} />
             <Radio title='MISC Lock Options' text='No Lock Hole' state='MICS' dispatch='Add_MICS' />
             <Drop state='Packaging' dispatch={'Add_Packaging'} data={Packaging} title='Packaging' icon={true} />
