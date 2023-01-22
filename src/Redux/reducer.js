@@ -130,6 +130,43 @@ export default function reducer(state = {
     Configuration: false
 }, action) {
     switch (action.type) {
+        case "DELETE":
+            return {
+                ...state,
+                Category: '',
+                DoorStyle: '',
+                DoorType: '',
+                ShippingPoint: '',
+                Assembly: '',
+                WidthOne: '',
+                WidthTwo: '',
+                HeightOne: '',
+                HeightTwo: '',
+                Windcode: '',
+                Design: '',
+                Color: '',
+                GlassType: '',
+                Section: '',
+                Framing: '',
+                Spring: '',
+                TrackSize: '',
+                TrackMount: '',
+                TrackLift: '',
+                TrackRadius: '',
+                Lock: '',
+                Packaging: '',
+                MICS: false,
+                Extra: false,
+                Spade: false,
+                Quiet: false,
+                astragal: false,
+                guarantee: false,
+                medallion: false,
+                seal: false,
+                mounted: false,
+                spear: false,
+                Configuration: false
+            }
         case "Add_Configuration":
             return {
                 ...state,
@@ -281,20 +318,20 @@ export default function reducer(state = {
                 DoorStyle: action.payload
             };
         case "Add_DoorType":
-                return {
-                    ...state,
-                    DoorType: action.payload
-                };
+            return {
+                ...state,
+                DoorType: action.payload
+            };
         case "Add_ShippingPoint":
-                return {
-                    ...state,
-                    ShippingPoint: action.payload
-                };
+            return {
+                ...state,
+                ShippingPoint: action.payload
+            };
         case "Add_Assembly":
-                    return {
-                        ...state,
-                        Assembly: action.payload
-                    };
+            return {
+                ...state,
+                Assembly: action.payload
+            };
         default:
             return state;
     }

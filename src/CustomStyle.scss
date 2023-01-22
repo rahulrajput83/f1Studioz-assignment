@@ -30,6 +30,25 @@ $theme-colors: (
     }
 }
 
+.line {
+    height: 0.05rem;
+    width: 100%;
+    margin: 1rem 0;
+    background: #E5E5E5;
+}
+
+.lineAddress {
+    height: 0.05rem;
+    width: 100%;
+    margin: 1rem 0;
+    background: #E5E5E5;
+    @media (min-width: 992px) {
+        width: 0.05rem;
+        margin: auto 1rem;
+        height: 4rem;
+    }
+}
+
 .Cursor {
     cursor: pointer;
 }
@@ -137,6 +156,14 @@ input[type=checkbox] {
     accent-color: #66332B;
 }
 
+.widthH {
+    width: 2rem;
+    height: 2rem
+}
+.widthShow {
+    width: 4rem;
+    height: 2rem
+}
 
 /* import bootstrap to set changes */
 @import "~bootstrap/scss/bootstrap";
